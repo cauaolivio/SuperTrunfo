@@ -7,7 +7,7 @@
     - JavaScript
     - PHP
     - MySQL
-- Feito por <a href="https://github.com/cauaolivio">Cauã Olivio</a> & <a href="https://github.com/gabrielcs04">Gabriel Costa</a>
+- Desenvolvido por <a href="https://github.com/cauaolivio">Cauã Olivio</a> & <a href="https://github.com/gabrielcs04">Gabriel Costa</a>
 ## Telas do projeto
 <p align="center">
     <h3>Cadastro</h3>
