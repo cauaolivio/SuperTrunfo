@@ -1,7 +1,7 @@
 # SuperTrunfo
 - Site que consiste em um super trunfo de carros.
 - Feito ao longo do 4º bimestre da disciplina de DSW (Desenvolvimento de Sistemas Web) no IFSP no 2º ano do ensino médio técnico. 
-- Tecnologias utilizadas:
+- Tecnologias utilizadas
     - HTML
     - CSS
     - JavaScript
