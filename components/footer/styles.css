@@ -1,0 +1,28 @@
+.content-footer {
+  height: 40px;
+  background-color: #15151e;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-footer p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.content-footer p a {
+  transition: .2s;
+  text-decoration: none;
+}
+
+.content-footer p a i {
+  font-size: 20px;
+}
+
+.content-footer p a:hover {
+  opacity: .8;
+}

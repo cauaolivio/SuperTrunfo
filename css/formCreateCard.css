@@ -1,0 +1,29 @@
+.content-main form .form-line {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.content-main form .form-line .form-item input {
+  width: 490px;
+}
+
+.content-main form .form-line.middle .form-item input {
+  width: 317px;
+}
+
+.content-main form .buttom-container {
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.content-main form .buttom-container a {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.content-main form .buttom-container a:hover {
+  opacity: .8;
+}

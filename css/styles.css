@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar,
+.scroll-x::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+body::-webkit-scrollbar-track,
+.scroll-x::-webkit-scrollbar-track {
+  border-radius: 50px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb,
+.scroll-x::-webkit-scrollbar-thumb {
+  background-color: #15151e;
+  border: 1px solid #a8a8a8;
+  border-radius: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.content-main {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #32353C;
+  position: relative;
+}
+
+.content-main h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.text-alert {
+  background-color: #e45d58;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+
+.label-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-item {
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 0 5px;
+  width: 640px;
+  height: 45px;
+  background-color: #626263;
+}
+
+.buttom-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttom-item input {
+  width: 180px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  background-color: #47AD36;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.buttom-item input:hover {
+  opacity: .8;
+}
+
+
+.buttom-item span a {
+  color: #3CA2F0;
+  font-size: 18px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.buttom-item span a:hover {
+  opacity: .8;
+}
+
+.content-main .cards-game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-main .cards-game .buttom-game,
+.content-main .cards-game .buttom-play {
+  background-color: #47AD36;
+  width: 185px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  transition: .2s;
+}
+
+.content-main .cards-game input:hover {
+  opacity: .8;
+}
+
+.buttom-play {
+  display: none;
+}
+
+.link-end-game {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.link-end-game:hover {
+  opacity: .8;
+}
+
+.wrapper-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.message-result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-end-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #32353C;
+  opacity: .8;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-end-game .title-modal {
+  text-transform: uppercase;
+  font-size: 64px;
+}
+
+.content-end-game .message-modal {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.content-end-game .buttom-play-again {
+  background-color: #47AD36;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  transition: .2s;
+  margin-bottom: 30px;
+}
+
+.content-end-game .buttom-play-again:hover {
+  opacity: .8;
+}
+
+.content-end-game .link-exit {
+  text-decoration: none;
+  font-weight: bold;
+  transition: .2s;
+  font-size: 26px;
+}
+
+.content-end-game .link-exit:hover {
+  opacity: .8;
+}

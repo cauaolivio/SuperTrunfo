@@ -1,0 +1,96 @@
+.profile-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-container .profile-data .user-icon {
+  background-color:#fff;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.profile-container .profile-data div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-left: 45px;
+  gap: 20px;
+}
+
+.profile-container .profile-data div span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-container .profile-data div a {
+  transition: .2s;
+}
+
+.profile-container .profile-data div a:hover {
+  opacity: .6;
+}
+
+ .table-matchs .table-matchs-header {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.table-matchs .table-matchs-header span {
+  font: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table-matchs .table-matchs-body .table-matchs-item {
+  background-color: #fff;
+  border-radius: 16px;
+  height: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.table-matchs .table-matchs-body .table-matchs-item span {
+  font: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.table-matchs .table-matchs-body .table-matchs-item span.victory {
+  color: #47AD36;
+}
+
+.table-matchs .table-matchs-body .table-matchs-item span.defeat {
+  color: #E10600;
+}
+
+.table-matchs .table-matchs-header span:first-child,
+.table-matchs .table-matchs-body .table-matchs-item span:first-child {
+  width: 320px;
+}
+
+.table-matchs .table-matchs-header span:not(:first-child),
+.table-matchs .table-matchs-body .table-matchs-item span:not(:first-child) {
+  width: 220px;
+}
+
+.alert {
+  background-color: #626263;
+  color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 24px;
+}

@@ -1,0 +1,157 @@
+.container-machine {
+  position: relative;
+}
+
+.container-machine .point-machine {
+  position: absolute;
+  top: -47px;
+  right: 110px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cards-container {
+  position: relative;
+}
+
+.card-machine {
+  width: 220px;
+  height: 370px;
+  background-color: #626263;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.main-card-machine-content {
+  position: relative;
+  z-index: 3;
+  top: -20px;
+}
+
+.main-card-machine-content .card-machine-front {
+  display: none;
+}
+
+.main-card-machine-content .card-machine-front .card-machine-front-content {
+  background-color: #fff;
+  height: 370px;
+  border-radius: 16px;
+}
+
+.main-card-machine-content .card-machine-front .card-machine-front-content.animate {
+  animation-name: fade;
+  animation-duration: 1s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+.card-machine-front .card-machine-front-content .header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-machine-front .card-machine-front-content .header-content img {
+  width: 220px;
+  height: 160px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-machine-front .card-machine-front-content .header-content span {
+  color: #e10600;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-machine-front .card-machine-front-content .body-content {
+  margin: 5px
+}
+
+.card-machine-front .card-machine-front-content .body-content .atr-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #e10600;
+}
+
+.card-machine-front .card-machine-front-content .body-content .atr-item:last-child {
+  border: none;
+}
+
+.card-machine-front .card-machine-front-content .body-content .atr-item div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-machine-front .card-machine-front-content.body-content .atr-item div .atr-radio {
+  width: 15px;
+  height: 15px; 
+}
+
+.card-machine-front .card-machine-front-content .body-content .atr-item span {
+  color: #15151E;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main-card-machine-content .card-machine-back {
+  display: block;
+  line-height: 370px;
+  text-align: center;
+}
+
+.main-card-machine-content .card-machine-back h2 {
+  margin: 0;
+}
+
+.main-card-machine-content .card-machine-back h2 span{
+  color: #e10600;
+}
+
+.card-secondary {
+  position: absolute;
+}
+
+.card-secondary h2 span {
+  color: #e10600;
+}
+
+.card-secondary a {
+  display: block;
+  line-height: 285px;
+}
+
+.left-card-machine-content {
+  transform: rotate(-10deg);
+  left: -100px;
+  top: 1px;
+}
+
+.right-card-machine-content {
+  text-align: right;
+  transform: rotate(10deg);
+  left: 100px;
+  top: 1px;
+}

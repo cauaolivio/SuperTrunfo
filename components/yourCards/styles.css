@@ -1,0 +1,65 @@
+.table-cards {
+  width: 100%;
+}
+
+.table-cards .table-cards-header {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.table-cards .table-cards-header span {
+  font: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table-cards .table-cards-body .table-cards-item {
+  background-color: #fff;
+  border-radius: 16px;
+  height: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.table-cards .table-cards-body .table-cards-item span {
+  font: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.table-cards .table-cards-header span:first-child,
+.table-cards .table-cards-body .table-cards-item span:first-child {
+  width: 18%;
+}
+
+.table-cards .table-cards-header span:not(:first-child),
+.table-cards .table-cards-body .table-cards-item span:not(:first-child) {
+  width: 15%;
+}
+
+.table-cards .table-cards-body .table-cards-item a {
+  transition: .2s;
+}
+
+.table-cards .table-cards-body .table-cards-item a:hover {
+  opacity: .6;
+
+}
+.table-cards .table-cards-body .table-cards-item a:last-child {
+  margin-left: 2px;
+}
+
+.alert {
+  background-color: #626263;
+  color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 24px;
+}
