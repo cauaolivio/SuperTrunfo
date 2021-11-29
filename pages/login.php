@@ -22,7 +22,12 @@
 
   <main class="content-main">
     <h2>Faça seu login</h2>
-    
+    <?php
+      session_start(); 
+      if (isset($_SESSION['erro'])) {
+        echo '<span class="alert-error">'. $_SESSION['erro'] .'</span>';
+      } 
+    ?>
     <form action="../database/loginUser.php" method="POST">
         <div class="form-item">
           <label for="email" class="label-item">Email</label>

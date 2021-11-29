@@ -29,6 +29,11 @@
 
   <main class="content-main">
     <h2>Crie sua conta</h2>
+    <?php
+      if (isset($_SESSION['erro'])) {
+        echo '<span class="alert-error">'. $_SESSION['erro'] .'</span>';
+      } 
+    ?>
     <form action="./database/saveUser.php" method="POST">
         <div class="form-item">
           <label for="nome" class="label-item">Nome completo</label>

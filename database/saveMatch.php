@@ -9,10 +9,6 @@
     $date = $_POST['date'];
     $schedule = $_POST['schedule'];
     $status = $_POST['status'];
-    
-    echo $date;
-    echo $schedule;
-    echo $status;
 
     $sql = "INSERT INTO partida(id_usuario, data, hora, status) VALUES($idUser, '$date', '$schedule', '$status')";
     

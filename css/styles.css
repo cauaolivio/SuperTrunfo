@@ -53,12 +53,14 @@ body::-webkit-scrollbar-thumb,
   font-size: 36px;
 }
 
-.text-alert {
-  background-color: #e45d58;
-  font-weight: bold;
-  padding: 10px;
+.alert-error {
+  background-color: #fff;
+  color: #e10600;
+  padding: 8px;
   border-radius: 8px;
-  display: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .form-item {

@@ -23,7 +23,12 @@
 
   <main class="content-main">
     <h2>Crie uma carta</h2>
-    
+    <?php
+      session_start();
+      if (isset($_SESSION['erro'])) {
+        echo '<span class="alert-error">'. $_SESSION['erro'] .'</span>';
+      } 
+    ?>
     <form action="../database/saveCard.php" method="POST">
         <div class="form-line">
           <div class="form-item">
