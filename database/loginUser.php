@@ -1,8 +1,9 @@
 <?php
   session_start();
   include_once "connection.php";
-
+  echo 'oi';
   if (isset($_POST['email']) && isset($_POST['senha'])) {
+    echo 'ei';
     $email = $_POST['email'];
     $password = $_POST['senha'];
 
@@ -17,9 +18,9 @@
         mysqli_close($conn);
         header("Location: ../pages/main.php");
       }
+    } else {
+      mysqli_close($conn);
+      header("Location: ../pages/login.php");
     }
-  } else {
-    mysqli_close($conn);
-    header("Location: ../pages/login.php");
   }
 ?>
