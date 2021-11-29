@@ -123,7 +123,7 @@ function getSelectAtr() {
   }
 }
 
-function makeCardMachine(cardsMachine) {
+function makeCardMachine(cardsMachine, atrSelect) {
   let image = document.querySelector('#imageMachine');
   let name = document.querySelector('#nameMachine');
   let potency = document.querySelector('#potencyMachine');
@@ -138,6 +138,51 @@ function makeCardMachine(cardsMachine) {
     image.src = "../assets/StandardCar.jpg";
   }
   name.innerHTML = cardsMachine[indexCardMachine].nome;
+
+  switch (atrSelect) {
+    case 'potencia':
+      potency.parentNode.style.backgroundColor = "#FF9794";
+      
+      motor.parentNode.style.backgroundColor = null;
+      maxSpeed.parentNode.style.backgroundColor = null;
+      time.parentNode.style.backgroundColor = null;
+      weight.parentNode.style.backgroundColor = null;
+      break;
+    case 'motor':
+      motor.parentNode.style.backgroundColor = "#FF9794";
+
+      potency.parentNode.style.backgroundColor = null;
+      maxSpeed.parentNode.style.backgroundColor = null;
+      time.parentNode.style.backgroundColor = null;
+      weight.parentNode.style.backgroundColor = null;
+      break;
+    case 'velocidade_maxima':
+      maxSpeed.parentNode.style.backgroundColor = "#FF9794";
+
+      potency.parentNode.style.backgroundColor = null;
+      motor.parentNode.style.backgroundColor = null;
+      time.parentNode.style.backgroundColor = null;
+      weight.parentNode.style.backgroundColor = null;
+      break;
+    case 'tempo_zero_cem':
+      time.parentNode.style.backgroundColor = "#FF9794";
+
+      potency.parentNode.style.backgroundColor = null;
+      motor.parentNode.style.backgroundColor = null;
+      maxSpeed.parentNode.style.backgroundColor = null;
+      weight.parentNode.style.backgroundColor = null;
+      break;
+    case 'peso':
+      weight.parentNode.style.backgroundColor = "#FF9794";
+      weight.parentNode.style.borderBottomLeftRadius = "8px";
+      weight.parentNode.style.borderBottomRightRadius = "8px";
+
+      potency.parentNode.style.backgroundColor = null;
+      motor.parentNode.style.backgroundColor = null;
+      maxSpeed.parentNode.style.backgroundColor = null;
+      time.parentNode.style.backgroundColor = null;
+      break;
+  }
   
   potency.innerHTML = `${cardsMachine[indexCardMachine].potencia} CV`;
   motor.innerHTML = `${cardsMachine[indexCardMachine].motor}${cardsMachine[indexCardMachine].motor.indexOf('.') === -1 ? '.0' : ''}`;
@@ -159,7 +204,7 @@ function playGame() {
     cardFrontMachine.style.display = 'block';
     cardBackMachine.style.display = 'none';
     
-    makeCardMachine(cardsMachine);
+    makeCardMachine(cardsMachine, atrSelect);
     
     if (atrSelect == 'tempo_zero_cem') {
       if (valCardPlayer < valCardMachine) {
