@@ -23,7 +23,7 @@
     <div class="table-cards-item">
       <span><?php echo $row['nome'] ?></span>
       <span><?php echo $row['potencia'] ?> CV</span>
-      <span><?php echo $row['motor'] ?></span>
+      <span><?php echo $row['motor']; echo strrpos($row['motor'], '.') ? '' : '.0'; ?></span>
       <span><?php echo $row['velocidade_maxima'] ?> Km/h</span>
       <span><?php echo $row['tempo_zero_cem'] ?> seg</span>
       <span><?php echo $row['peso'] ?> Kg</span>
