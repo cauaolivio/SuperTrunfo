@@ -1,5 +1,5 @@
 # SuperTrunfo
-- Site que consiste em um super trunfo de carros.
+- Sistema Web de um super trunfo de carros, onde o usuário pode fazer todas as operações do CRUD para as cartas do jogo e pode jogar contra o computador.
 - Feito ao longo do 4º bimestre da disciplina de DSW (Desenvolvimento de Sistemas Web) no IFSP no 2º ano do ensino médio técnico. 
 - Tecnologias utilizadas:
     - HTML
